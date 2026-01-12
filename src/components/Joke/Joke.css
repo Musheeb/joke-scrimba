@@ -1,0 +1,17 @@
+.joke {
+  font-weight: bolder;
+}
+.joke-side-heading {
+  color: red;
+}
+.punch {
+  font-weight: bolder;
+}
+.punch-side-heading {
+  color: green;
+}
+.ruler {
+  border: none;
+  height: 5px;
+  background-color: purple;
+}
