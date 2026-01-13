@@ -1,11 +1,19 @@
 import "./App.css";
 import Joke from "./components/Joke/Joke.jsx";
+import jokeData from "./data.js";
 
 function App() {
+  const jokes = jokeData.map((joke) => {
+    return <Joke key={joke.id} {...joke} />;
+  });
+  // console.log(jokes);
+  // console.log("Hola");
+  // console.log(jokes);
   return (
     <div className="main-container">
       <h1>Laugh - Because you have nothing to do right now</h1>
-      <Joke
+      {jokes}
+      {/* <Joke
         // joke="I told my wife she was drawing her eyebrows too high."
         punch="No Joke for this - Becasue we are testing conditional rendering"
         jokeSide="JOKE - "
@@ -64,7 +72,7 @@ function App() {
         upvotes={9}
         downvotes={3}
         comments={["heyy"]}
-      />
+      /> */}
     </div>
   );
 }

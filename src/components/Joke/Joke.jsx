@@ -3,16 +3,19 @@ import "./Joke.css";
 function Joke({
   joke,
   punch,
-  jokeSide,
-  punchSide,
-  upvotes,
-  downvotes,
-  isPun,
-  comments,
+  // jokeSide,
+  // punchSide,
+  // upvotes,
+  // downvotes,
+  // isPun,
+  // comments,
 }) {
   return (
     <div>
-      {isPun && <p className="pun">This joke is titled as a Pun</p>}
+      <p className="joke">{joke}</p>
+      <p className="punch">{punch}</p>
+      <hr className="ruler" />
+      {/* {isPun && <p className="pun">This joke is titled as a Pun</p>}
       {joke && (
         <p className="joke">
           <span className="joke-side-heading">{jokeSide}</span>
@@ -28,7 +31,7 @@ function Joke({
       <p>Comments - </p>
       {comments.length > 0 &&
         comments.map((comment, index) => <p key={index}>{comment}</p>)}
-      <hr className="ruler" />
+      <hr className="ruler" /> */}
     </div>
   );
 }

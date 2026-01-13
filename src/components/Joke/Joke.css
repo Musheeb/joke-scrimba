@@ -1,11 +1,13 @@
 .joke {
-  font-weight: bolder;
+  /* font-weight: bolder; */
+  color: green;
 }
 .joke-side-heading {
   color: red;
 }
 .punch {
-  font-weight: bolder;
+  /* font-weight: bolder; */
+  color: red;
 }
 .punch-side-heading {
   color: green;
